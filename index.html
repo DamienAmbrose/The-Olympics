@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>The Olympics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/fdc41ad447.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" href="favicon.ico">
+<style>
+body,h1 {
+  font-family: "Raleway", sans-serif
+}
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+.bgimg {
+  background-image: url('https://www.1776.vc/wp-content/uploads/2016/08/iStock_000075581173_Large-1024x512.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge"><b>
+    <i class="fas fa-circle-notch"></i>lymics</b>
+  </div>
+  <div class="w3-display-middle">
+    <canvas id="logo" width= "800" height="400" style="background-color: rgba(255, 255, 255, 0.815);box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.521);">
+  </div>
+</div>
+
+</body>
+
+
+<script>
+  canvas_id = document.getElementById("logo");
+  context_manager = canvas_id.getContext("2d");
+
+  context_manager.beginPath();
+  context_manager.strokeStyle = "#0081c8";
+  context_manager.lineWidth = 7;
+  context_manager.arc(300, 180, 40, 0, 90);
+  context_manager.stroke();
+
+  context_manager.beginPath();
+  context_manager.strokeStyle = "#fcb131";
+  context_manager.lineWidth = 7;
+  context_manager.arc(350, 220, 40, 0, 90);
+  context_manager.stroke();
+
+  context_manager.beginPath();
+  context_manager.strokeStyle = "rgb(0, 0, 0)";
+  context_manager.lineWidth = 7;
+  context_manager.arc(400, 180, 40, 0, 90);
+  context_manager.stroke();
+  
+  context_manager.beginPath();
+  context_manager.strokeStyle = "#00a651";
+  context_manager.lineWidth = 7;
+  context_manager.arc(450, 220, 40, 0, 90);
+  context_manager.stroke();
+
+  context_manager.beginPath();
+  context_manager.strokeStyle = "#ee334e";
+  context_manager.lineWidth = 7;
+  context_manager.arc(500, 180, 40, 0, 90);
+  context_manager.stroke();
+</script>
+
+</html>
